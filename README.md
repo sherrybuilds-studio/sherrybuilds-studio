@@ -96,15 +96,6 @@ Every number above is listed with its evidence on [sherrybuilds.com](https://she
 - **Compliance in code, not slides.** AI disclosure (EU AI Act Art. 50), recording consent (§201 StGB), and UWG §7 consent gates live in the codebase and leave evidence.
 - **One VPS, run like a fleet.** 17 agents review, audit, back up, evaluate, and heal the system I build on.
 
-## GitHub stats
-
-<div align="center">
-
-![Stats](https://github-readme-stats.vercel.app/api?username=sherrybuilds-studio&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true)
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=sherrybuilds-studio&layout=compact&theme=tokyonight&hide_border=true)
-
-</div>
-
 <div align="center">
 
 *CS student at Arden University Berlin (2025–2028) · Werkstudent-ready · Berlin, Germany*
