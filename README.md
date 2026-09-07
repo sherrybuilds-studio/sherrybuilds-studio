@@ -2,7 +2,7 @@
 
 <img src="https://github.com/sherrybuilds-studio.png" width="128" height="128" alt="Muhammad Shehryar" style="border-radius:50%" />
 
-# Muhammad Shehryar
+# Shehryar Irfan
 
 **AI automation engineer · Berlin** — I build LLM systems that run in production, with the evals, tracing and compliance to prove it.
 
