@@ -7,7 +7,7 @@
 **AI automation engineer · Berlin** — I build LLM systems that run in production, with the evals, tracing and compliance to prove it.
 
 [![Website](https://img.shields.io/badge/sherrybuilds.com-live_site-22d3ee?style=for-the-badge&logo=googlechrome&logoColor=white)](https://sherrybuilds.com)
-[![Email](https://img.shields.io/badge/email-codewithsherry1%40gmail.com-0a0e1a?style=for-the-badge&logo=gmail&logoColor=white)](mailto:codewithsherry1@gmail.com)
+[![Email](https://img.shields.io/badge/email-sherry.aiops%40gmail.com-0a0e1a?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sherry.aiops@gmail.com)
 [![Open to](https://img.shields.io/badge/open_to-Werkstudent_AI_%2F_LLM_roles-16a34a?style=for-the-badge)](https://sherrybuilds.com#contact)
 
 📞 **Live voice demo on request — email me and Clara will be on the line within the hour.** It answers in German or English, books appointments, and tells you it's an AI in the first sentence.
