@@ -1,103 +1,38 @@
-<div align="center">
-
-<img src="https://github.com/sherrybuilds-studio.png" width="128" height="128" alt="Shehryar Irfan" style="border-radius:50%" />
-
 # Shehryar Irfan
 
-**AI automation engineer · Berlin** — I build LLM systems that run in production, with the evals, tracing and compliance to prove it.
+I build and run LLM systems on my own Linux server: a phone receptionist, a WhatsApp product assistant, a job-search pipeline, and the agent fleet that maintains them.
+Each one has an offline test gate, and every number below links to a dated result file.
+Second-year computer science student in Berlin (B.Sc., 2025 to 2028). Open to working-student roles, up to 20 h/week.
 
-[![Website](https://img.shields.io/badge/sherrybuilds.com-live_site-22d3ee?style=for-the-badge&logo=googlechrome&logoColor=white)](https://sherrybuilds.com)
-[![Email](https://img.shields.io/badge/email-sherry.aiops%40gmail.com-0a0e1a?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sherry.aiops@gmail.com)
-[![Open to](https://img.shields.io/badge/open_to-Werkstudent_AI_%2F_LLM_roles-16a34a?style=for-the-badge)](https://sherrybuilds.com#contact)
-
-📞 **Live voice demo on request — email me and Clara will be on the line within the hour.** It answers in German or English, books appointments, and tells you it's an AI in the first sentence.
-
-</div>
+[sherrybuilds.com](https://sherrybuilds.com) · [sherry.aiops@gmail.com](mailto:sherry.aiops@gmail.com) · [LinkedIn](https://www.linkedin.com/in/shehryar-irfan-bb5469349) · [Portfolio repo](https://github.com/sherrybuilds-studio/ai-systems-portfolio)
 
 ---
 
-## What's running right now
+## What I've built
 
-| System | Status | Proof (dated, verifiable) |
+| System | State | Evidence |
 |---|---|---|
-| **AI phone receptionist** (Vapi + FastAPI tool webhook) | live | 43 real calls · 12/12 outcome eval (2026-08-25) · per-call EU AI Act Art. 50 + §201 StGB evidence, sha256-chained |
-| **Self-healing agent fleet** (Postgres-leased dispatcher, 17 agents) | live | 520 runs since Jul 9 · 0.8% hard failures · a 43% failed-or-stale backlog drained to zero in one day |
-| **RAG commerce agent** (WhatsApp, hybrid retrieval, semantic cache) | client pilot | 38% token cost cut (1,118 → 695 tokens/message), Langfuse-traced |
-| **Restaurant reservation agent** (Telegram, menu RAG) | built, offline | 10/10 retrieval gate on a fresh index (2026-08-25) |
-| **Job pipeline** (scrape → score → cover letters → digest) | parked | ran daily on cron, last run 2026-08-20 |
+| **AI phone receptionist**: Vapi voice agent in German and English, FastAPI tool webhook for availability and bookings, AI disclosure and recording consent at the start of every call | Deployed. Demo on request | 12 of 12 golden calls pass the outcome check ([eval, 2026-09-02](https://github.com/sherrybuilds-studio/ai-systems-portfolio/blob/main/evals/2026-09-02-voice-receptionist-eval.json)) |
+| **Agent fleet with a self-healer**: Postgres-leased task queue, 36 enabled Claude Code agents (54 defined), a healer that classifies each failure and requeues, skips or escalates it | Running | 1,000 runs since 2026-07-09, 2.4% hard failures ([snapshot, 2026-09-24](https://github.com/sherrybuilds-studio/ai-systems-portfolio/blob/main/evals/2026-09-24-fleet-stats.json)) |
+| **Job pipeline**: daily scrape and rule-based scoring, plus a sourcing pass over company career boards, a tailored one-page CV, and a cover letter that a second model reviews | Running daily | 308 to 383 postings per daily run; 83 career boards, 2,981 postings in the 26 Sep sourcing pass ([evidence, 2026-09-26](https://github.com/sherrybuilds-studio/ai-systems-portfolio/blob/main/evals/2026-09-26-job-pipeline.json)) |
+| **WhatsApp product assistant** for a furniture brand: hybrid keyword and vector retrieval, semantic cache | Pilot | Prompt size cut 38%, 1,118 to 695 tokens per message, after replacing the full-catalogue prompt with retrieval ([changelog, 2026-04-27](https://github.com/sherrybuilds-studio/commerce-rag-agent/blob/main/CHANGELOG.md)) |
+| **Restaurant reservation assistant**: bookings, waitlist, reminders, menu retrieval | Built, not deployed | 10 of 10 retrieval questions ([eval, 2026-09-02](https://github.com/sherrybuilds-studio/ai-systems-portfolio/blob/main/evals/2026-09-02-restaurant-bot-eval.json)) |
+| **Lead scoring for local businesses (Sales OS)** | Tested on one live run | 10 of 10 scorer cases ([eval, 2026-09-02](https://github.com/sherrybuilds-studio/ai-systems-portfolio/blob/main/evals/2026-09-02-sales-os-eval.json)) |
 
-Every number above is listed with its evidence on [sherrybuilds.com](https://sherrybuilds.com) and in the [portfolio repo](https://github.com/sherrybuilds-studio/ai-systems-portfolio).
-
-## Languages
-
-**Code:** Python (primary) · TypeScript · SQL · Bash
-**Human:** English (fluent) · Urdu (native) · German (A2, learning)
-
-## Tech stack
-
-**AI / LLM**
-![Claude](https://img.shields.io/badge/Claude_API_%2F_Claude_Code-191919?style=flat-square&logo=anthropic&logoColor=white)
-![OpenRouter](https://img.shields.io/badge/OpenRouter_(GLM--5.2)-6366f1?style=flat-square)
-![Vapi](https://img.shields.io/badge/Vapi_voice_agents-0ea5e9?style=flat-square)
-![RAG](https://img.shields.io/badge/RAG_%C2%B7_hybrid_retrieval-22d3ee?style=flat-square)
-![ChromaDB](https://img.shields.io/badge/ChromaDB-ff6f3c?style=flat-square)
-![MiniLM](https://img.shields.io/badge/sentence--transformers_(MiniLM)-f59e0b?style=flat-square)
-![Langfuse](https://img.shields.io/badge/Langfuse_tracing-000000?style=flat-square)
-![LiteLLM](https://img.shields.io/badge/LiteLLM-2563eb?style=flat-square)
-![Evals](https://img.shields.io/badge/eval_gates_in_CI-16a34a?style=flat-square)
-
-**Backend**
-![Python](https://img.shields.io/badge/Python_3.12-3776AB?style=flat-square&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![Pydantic](https://img.shields.io/badge/pydantic--settings-E92063?style=flat-square&logo=pydantic&logoColor=white)
-![httpx](https://img.shields.io/badge/httpx-0f766e?style=flat-square)
-![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
-![uv](https://img.shields.io/badge/uv_%C2%B7_ruff_%C2%B7_pytest-DE5FE9?style=flat-square)
-
-**Frontend**
-![Next.js](https://img.shields.io/badge/Next.js_16-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React_19-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=flat-square&logo=greensock&logoColor=black)
-![R3F](https://img.shields.io/badge/React_Three_Fiber-000000?style=flat-square&logo=threedotjs&logoColor=white)
-
-**Data & messaging**
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
-![WhatsApp](https://img.shields.io/badge/WhatsApp_Cloud_API-25D366?style=flat-square&logo=whatsapp&logoColor=white)
-![Telegram](https://img.shields.io/badge/Telegram_Bot_API-26A5E4?style=flat-square&logo=telegram&logoColor=white)
-![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white)
-
-**Infra & ops**
-![Linux](https://img.shields.io/badge/Ubuntu_VPS-E95420?style=flat-square&logo=ubuntu&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![PM2](https://img.shields.io/badge/PM2-2B037A?style=flat-square&logo=pm2&logoColor=white)
-![Caddy](https://img.shields.io/badge/Caddy-1F88C0?style=flat-square)
-![Cloudflare](https://img.shields.io/badge/Cloudflare_Tunnel-F38020?style=flat-square&logo=cloudflare&logoColor=white)
-![Tailscale](https://img.shields.io/badge/Tailscale-242424?style=flat-square&logo=tailscale&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
-![Security](https://img.shields.io/badge/gitleaks_%C2%B7_UFW_%C2%B7_fail2ban-b91c1c?style=flat-square)
-
-## Featured repositories
+## Public repositories
 
 | Repo | What it is |
 |---|---|
-| [ai-systems-portfolio](https://github.com/sherrybuilds-studio/ai-systems-portfolio) | Architecture docs, dated eval results, and a [SOLUTIONS → modules map](https://github.com/sherrybuilds-studio/ai-systems-portfolio/blob/main/SOLUTIONS.md) of the 10 systems I sell |
-| [reservation-agent](https://github.com/sherrybuilds-studio/reservation-agent) | Restaurant assistant — reservations, menu RAG, no-show prevention, 10/10 retrieval gate |
-| [job-pipeline](https://github.com/sherrybuilds-studio/job-pipeline) | Autonomous daily job pipeline — scrape, score, cover letters, Supabase dedup, Telegram digest |
-| [commerce-rag-agent](https://github.com/sherrybuilds-studio/commerce-rag-agent) | WhatsApp sales agent — hybrid RAG, 95%-cosine semantic cache, Langfuse cost tracing |
-| [sherrybuilds.com](https://github.com/sherrybuilds-studio/sherrybuilds.com) | The site itself — dated evidence strip built from real eval JSON, grounded chat widget |
+| [ai-systems-portfolio](https://github.com/sherrybuilds-studio/ai-systems-portfolio) | Architecture notes and dated eval results for every system above |
+| [sherrybuilds.com](https://github.com/sherrybuilds-studio/sherrybuilds.com) | My site in Next.js. The evidence section is generated from the eval JSON files at build time. Releases need my approval, and the server pulls them |
+| [commerce-rag-agent](https://github.com/sherrybuilds-studio/commerce-rag-agent) | WhatsApp product assistant: hybrid retrieval, semantic cache, prompt-injection filter |
+| [reservation-agent](https://github.com/sherrybuilds-studio/reservation-agent) | Restaurant assistant: reservations, waitlist, reminders, menu retrieval |
 
 ## How I work
 
-- **Eval-first.** Every product ships with an offline gate (voice 12/12, restaurant 10/10, sales 10/10); a change that drops a gate doesn't merge.
-- **Cost is a feature.** Every LLM call is traced per app and agent; the fleet enforces a €10/day cap from real token usage.
-- **Compliance in code, not slides.** AI disclosure (EU AI Act Art. 50), recording consent (§201 StGB), and UWG §7 consent gates live in the codebase and leave evidence.
-- **One VPS, run like a fleet.** 17 agents review, audit, back up, evaluate, and heal the system I build on.
+- **A test before a claim.** Every product has an offline eval gate. The voice and restaurant gates run in CI on every push.
+- **Compliance lives in code.** The receptionist states that it is an AI (EU AI Act Art. 50) and asks before recording (§201 StGB). Outreach drafts in Sales OS are blocked unless there is consent (UWG §7).
+- **Failures get a cause.** The self-healer puts every failed run into a failure class. Six script probes with no LLM run every 5 minutes, and eight more look for silent failures.
 
-<div align="center">
-
-*CS student in Berlin (2025–2028) · Werkstudent-ready · Berlin, Germany*
-
-</div>
+**Stack:** Python, FastAPI, Claude API and Claude Code, OpenRouter, Vapi, ChromaDB, sentence-transformers, PostgreSQL and Supabase, Docker, PM2, GitHub Actions, Next.js and TypeScript.
+**Languages:** English (fluent), Urdu (native), German (A2, learning).
