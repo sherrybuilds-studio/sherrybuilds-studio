@@ -1,6 +1,6 @@
 # Shehryar Irfan
 
-I build LLM systems for small businesses and run them in production on my own Linux server: an AI phone receptionist, WhatsApp assistants, a job-search pipeline, and a fleet of 54 Claude Code agents that maintains them.
+I design, build and operate production LLM systems for small businesses: an AI phone receptionist, WhatsApp assistants, a job-search pipeline, and a fleet of 54 Claude Code agents that maintains them.
 Every product has an offline eval gate, and every number below links to a dated result file.
 
 Based in Berlin · Available for AI engineering work · Second-year computer science student (B.Sc., 2025 to 2028)
@@ -39,5 +39,5 @@ Based in Berlin · Available for AI engineering work · Second-year computer sci
 - **Failures get a cause.** The self-healer puts every failed run into a failure class, and no-LLM probes check the stack every 5 minutes.
 - **Humans approve what leaves the building.** Outreach, job applications and review replies are drafts until a person sends them.
 
-**Stack:** Python, FastAPI, Claude API and Claude Code, OpenRouter, Vapi, ChromaDB, sentence-transformers, PostgreSQL and Supabase, Docker, PM2, GitHub Actions, Next.js and TypeScript.
+**Stack:** Python, FastAPI, Claude API and Claude Code, OpenRouter, Vapi, ChromaDB, sentence-transformers, PostgreSQL and Supabase, Docker, GitHub Actions, Next.js and TypeScript.
 **Languages:** English (fluent), Urdu (native), German (A2, learning).
